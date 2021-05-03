@@ -43,6 +43,9 @@ const App = () => {
 
       //set the card to the back
       setIsFlipped(true);
+
+      //reset search bar
+      setSearchText("");
     } catch (error) {
       setPokemon(null);
       errAlert();
