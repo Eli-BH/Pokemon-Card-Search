@@ -9,7 +9,7 @@ It uses React-card-flip to allow the cards to have a 3d affect
 
 The styles are all made with basic css. 
 
-![Pokemon search](:https://media1.giphy.com/media/SFe3ElLZgpTQvvdC03/giphy.gif?cid=790b7611aa892c907e0acaee4ccbee1cd85eb58463dadee1&rid=giphy.gif&ct=g)
+![Pokemon search](https://media1.giphy.com/media/SFe3ElLZgpTQvvdC03/giphy.gif?cid=790b7611aa892c907e0acaee4ccbee1cd85eb58463dadee1&rid=giphy.gif&ct=g)
 
 
 #Get the project running
