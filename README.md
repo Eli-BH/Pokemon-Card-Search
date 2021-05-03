@@ -15,7 +15,7 @@ The styles are all made with basic css.
 <br/>
 
 <br/>
-<h1>#Get the project running</h1>
+<h1>Get the project running</h1>
 #Get the project running
 To get the project running, you mush have JavaScript installed as well as React. 
 Then all that is needed is to run an -npm install command, 
@@ -24,10 +24,11 @@ Then npm start, to start the project
 
 <br/>
 
-<h2>#Errors</h2>
+<h2>Errors</h2>
 The most common error is a Pokemon not found error, this will come up for some newer pokemon if the api is no updated yet. 
 
 ![Not found error](https://media4.giphy.com/media/eouhku88BELe5G3buN/giphy.gif?cid=790b761149b9293529274d9ddbbe92ef5243488be099f3cd&rid=giphy.gif&ct=g)
 
-#Future plans
+<h3>Future plans</h3>
+<br/>
 I Will build a backed to theis appliction using express, node, and mongodb to allow users to save their favorites. 
