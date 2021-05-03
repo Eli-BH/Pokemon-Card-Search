@@ -27,7 +27,8 @@ const App = () => {
 
       //call for the move data from the api / different from general info
       const resMove = await axios.get(res.data.moves[0].move.url);
-
+      //set the card to the back
+      setIsFlipped(true);
       //set the pokemon move data to state
       setMove(resMove.data);
 
@@ -40,9 +41,6 @@ const App = () => {
 
       //get pokemon main info
       setPokemon(res.data);
-
-      //set the card to the back
-      setIsFlipped(true);
 
       //reset search bar
       setSearchText("");
