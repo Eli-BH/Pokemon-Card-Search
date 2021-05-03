@@ -2,12 +2,125 @@
   width: 400px;
   height: 700px;
   border: black solid 2px;
-  background-color: #ffbf00;
+  background-color: #ffcc00;
   border-radius: 14px;
   position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: 10px 12px 20px 1px rgba(0, 0, 0, 0.8);
+}
+
+.background-bug {
+  background-color: orange;
+  background-image: url("../images/bug.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-dark {
+  background-color: rgb(117, 115, 111);
+  /* background-image: url("./images/darkness.png"); */
+}
+.background-dragon {
+  background-color: orange;
+  background-image: url("../images/dragon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-dream {
+  background-color: orange;
+  background-image: url("../images/dream.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-electric {
+  background-color: rgb(251, 194, 8);
+  background-image: url("../images/electric.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-fairy {
+  background-color: orange;
+  background-image: url("../images/fairy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-fighting {
+  background-color: orange;
+  background-image: url("../images/fighting.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-fire {
+  background-color: orange;
+  background-image: url("../images/fire.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-flying {
+  background-color: orange;
+  background-image: url("../images/flying.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-ghost {
+  background-color: orange;
+  background-image: url("../images/ghost.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-grass {
+  background-color: orange;
+  background-image: url("../images/grass.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-ground {
+  background-color: orange;
+  background-image: url("../images/ground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-ice {
+  background-color: orange;
+  background-image: url("../images/ice.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-normal {
+  background-color: orange;
+  background-image: url("../images/normal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-poison {
+  background-color: orange;
+  background-image: url("../images/poison.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-psychic {
+  background-color: orange;
+  background-image: url("../images/psychic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-rock {
+  background-color: orange;
+  background-image: url("../images/rock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-steel {
+  background-color: orange;
+  background-image: url("../images/steel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-water {
+  background-color: orange;
+  background-image: url("../images/water.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-face {
@@ -28,6 +141,10 @@
 .card-img-container {
   position: relative;
   background-color: green;
+  background-image: url("https://cutewallpaper.org/21/pokemon-card-backgrounds/Best-48-TCG-Background-on-HipWallpaper-TCG-Wallpaper-TCG-.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   width: 93%;
   justify-self: center;
   border: solid black 2px;
@@ -66,8 +183,22 @@
   font-size: 1.2rem;
 }
 
+.stats span {
+  font-weight: bold;
+}
+.moves strong {
+  text-transform: capitalize;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  height: 60%;
+}
 .moves {
-  width: 98%;
+  width: 99%;
   margin-top: 20px;
   margin: auto;
   display: flex;
@@ -75,10 +206,39 @@
   font-size: 1.1rem;
   align-items: center;
   justify-content: space-evenly;
+  background-color: rgba(255, 230, 0, 0.2);
+  padding: 5px;
 }
 
 .moves p {
-  margin-top: 25px;
-
   font-family: Arial, Helvetica, sans-serif;
+}
+.moves p:last-child {
+  margin-top: 20px;
+}
+
+/*Back card face*/
+
+.card-container-back {
+  margin: auto;
+  width: 400px;
+  height: 700px;
+  border: black solid 2px;
+  background-color: #032f7e;
+  border-radius: 14px;
+  position: relative;
+  display: flex;
+  box-shadow: 8px 12px 12px 1px #222;
+}
+
+.card-back {
+  margin: auto;
+  width: 370px;
+  height: 650px;
+  border: solid 1px black;
+  background-color: orange;
+  background-image: url("https://i.imgur.com/YfRarvn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
