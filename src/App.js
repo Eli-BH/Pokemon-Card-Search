@@ -1,12 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
 import ReactCardFlip from "react-card-flip";
+import { ToastContainer, toast } from "react-toastify";
 
 import SearchBar from "./components/SearchBar";
 import Header from "./images/Pokemon-Card-Search.png";
 import "./styles/CardStyles.css";
 import "./styles/App.css";
 import SearchRequest from "./images/904f669301cec9d6f60156ad818fc12e.png";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [searchText, setSearchText] = useState("");
@@ -17,7 +19,7 @@ const App = () => {
 
   const submitSearch = async (e) => {
     e.preventDefault();
-
+    const errAlert = () => toast.error("Pokemon not found");
     try {
       const res = await axios.get(
         `https://pokeapi.co/api/v2/pokemon/${searchText.trim().toLowerCase()}`
@@ -40,7 +42,7 @@ const App = () => {
       setPokemon(res.data);
     } catch (error) {
       setPokemon(null);
-      alert("Not found");
+      errAlert();
     }
   };
 
@@ -52,6 +54,7 @@ const App = () => {
         setSearchText={setSearchText}
         submitSearch={submitSearch}
       />
+      <ToastContainer />
 
       {pokemon ? (
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
