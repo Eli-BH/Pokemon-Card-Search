@@ -165,7 +165,11 @@ const App = () => {
           </div>
         </ReactCardFlip>
       ) : (
-        <img src={SearchRequest} alt="Search for a pokemon" />
+        <img
+          src={SearchRequest}
+          className="alt-header"
+          alt="Search for a pokemon"
+        />
       )}
     </div>
   );

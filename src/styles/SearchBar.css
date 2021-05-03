@@ -36,3 +36,19 @@
   transform: scale(0.97);
   background-color: #2b55dd;
 }
+
+@media (max-width: 700px) {
+  .search-form {
+    width: 300px;
+    display: flex;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+
+  .search-input {
+    width: 200px;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+}
