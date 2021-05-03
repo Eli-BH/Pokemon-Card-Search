@@ -40,6 +40,9 @@ const App = () => {
 
       //get pokemon main info
       setPokemon(res.data);
+
+      //set the card to the back
+      setIsFlipped(true);
     } catch (error) {
       setPokemon(null);
       errAlert();
